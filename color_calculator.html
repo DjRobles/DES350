@@ -1,0 +1,216 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>calulator</title>	
+
+<style>
+	
+	body{
+		background-color:hsla(252,97%,12%,1.00); 
+		margin:0;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+	
+	#myCalulator{
+		margin-left: calc(50% - 200px)
+	}
+	
+	#display{
+		width: 405px;
+		height:60px;
+		margin-bottom: 10px;
+		background-color: hsla(137,90%,84%,1.00);
+		border:none;
+		font-size: 15px;
+		color:black;
+		margin-top: 20px;
+		border-radius: 5px;
+	}
+	
+	.number{
+		width:78px;
+		height:40px;
+		background-color:hsla(246,62%,31%,1.00);
+		font-size: 17px;
+		margin-top: 5px;
+		margin-bottom:5px;
+		border: none;
+		color:white;
+		border-radius: 5px;
+	}
+	
+	.number:hover{
+		width:78px;
+		Height:40px;
+		background-color:hsla(246,62%,52%,1.00);
+		color:black;
+		
+	}
+	
+	.operator{
+		width:78px;
+		height:20px;
+		background-color:hsla(216,45%,50%,1.00);
+		border:none;
+		margin-bottom:5px;
+		color: white;
+		border-radius:5px;
+		font-size:13px;
+	}
+	
+	.operator:hover{
+		width:78px;
+		height:20px;
+		background-color:hsla(217,44%,59%,1.00);
+		margin-bottom:5px;
+		color:black;
+	}
+	
+	.decimal{
+		width:37px;
+		height:20px;
+		background-color:hsla(155,75%,41%,1.00);
+		border:none;
+		border-radius: 5px;
+		font-size:13px;
+	}
+	
+	.decimal:hover{
+		width:37px;
+		height:20px;
+		background-color:hsla(155,74%,73%,1.00);
+		border:none;
+		color:black;
+		
+	}
+	
+	.negative{
+		width:37px;
+		height:20px;
+		background-color:hsla(155,75%,41%,1.00);
+		border: none;
+		border-radius: 5px;
+		font-size:13px;
+		
+	}
+	
+	.negative:hover{
+		width:37px;
+		height:20px;
+		background-color:hsla(155,74%,73%,1.00);
+		color: black;
+		
+	}
+	
+	.operator2{
+		width:78px;
+		height:30px;
+		background-color:hsla(155,75%,41%,1.00);
+		border:none;
+		margin-top: 5px;
+		color:black;
+		border-radius: 5px;
+	}
+	
+	.operator2:hover{
+		width:78px;
+		height:30px;
+		background-color:hsla(155,74%,73%,1.00);
+		margin-top: 5px;
+		color:black;
+	}
+	
+	.operator3{
+		width:325px;
+		height:30px;
+		background-color:hsla(211,97%,23%,1.00);
+		border:none;
+		color: white;
+		border-radius: 5px;
+	}
+	
+	.operator3:hover{
+		width:325px;
+		height:30px;
+		background-color:hsla(212,98%,41%,1.00);
+		border:none;
+		color:black;
+	}
+	
+	</style>
+
+</head>
+
+
+	
+<body>
+	<form name="calculator">
+<div id="myCalulator">
+<div id="top_display">
+<input type="text" name="display" id="display" disabled>
+</div>
+	
+<!--start of calculator	-->	
+	
+	<div class="inputRow">
+<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
+	
+<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value+='-'">
+	
+<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value+='*'">
+		
+<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value+='/'">	
+		
+<input type="button" class="decimal" name="decimal" value="." onclick="calculator.display.value+='.'">
+		
+<input type="button" class="negative" name="negative" value="-" onclick="calculator.display.value+='-'">			
+				
+		
+	</div>
+	
+<!--start of calculator	-->	
+	
+<div class="inputRow">
+<input type="button" class="number" value="1" onclick="calculator.display.value+='1'">
+	
+<input type="button" class="number" value="2" onclick="calculator.display.value+='2'">
+	
+<input type="button" class="number" value="3" onclick="calculator.display.value+='3'">	
+	
+<input type="button" class="number" value="4" onclick="calculator.display.value+='4'">		
+	
+<input type="button" class="number" value="5" onclick="calculator.display.value+='5'">	
+	
+	</div>
+	
+<div class="inputRow">
+<input type="button" class="number" value="6" onclick="calculator.display.value+='6'">
+	
+<input type="button" class="number" value="7" onclick="calculator.display.value+='7'">
+	
+<input type="button" class="number" value="8" onclick="calculator.display.value+='8'">	
+	
+<input type="button" class="number" value="9" onclick="calculator.display.value+='9'">		
+	
+<input type="button" class="number" value="0" onclick="calculator.display.value+='0'">	
+	
+	</div>
+	
+<div class="inputRow">
+
+<input type="button" class="operator2" name="clear" value="clear" onclick="calculator.display.value=''">			
+
+<input type="button" class="operator3" name="equals" value="equals" onclick="calculator.display.value=eval(calculator.display.value)">		
+		
+	</div>	
+	
+
+	
+	
+	
+</div>
+		
+</form>
+</body>
+</html>
