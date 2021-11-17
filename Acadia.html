@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Deep Purple</title>
+
+	<style>
+		body{
+			background-color: rgba(77,52,125,1.00);
+			margin:0px;
+			padding:0px;
+		}
+		
+		.card{
+			position: absolute;
+			left:50%;
+			top:50%;
+			transform: translate(-50%,-50%);
+			width:40%;
+			height:90vh;
+			background: url("strangers1.jpg") no-repeat center;
+			background-size: contain;
+		}
+		
+		.card:hover{
+			background: url("Acadia.gif")no-repeat center;
+			background-size: contain;
+		}
+		
+		#preload{
+			background: url("Acadia.gif")no-repeat -9999px -9999px;
+		}
+		
+	</style>
+	</head>
+<body>
+<div class="card"></div>
+<div id="preload"></div>	
+	
+	
+</body>
+</html>
