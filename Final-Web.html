@@ -1,0 +1,858 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Website</title>
+	
+<style>
+	
+	body{
+		background-color:hsla(264,65%,16%,1.00);
+		margin:0px;
+		padding:0px;
+		font-family: "Helvetica Neue LT Std 95 Black", "Helvetica Neue Medium", "Helvetica Neue LT Std 45 Light", "Helvetica Neue LT Std 35 Thin";
+	
+	}
+	
+	h1{
+		color:hsla(251,100%,97%,1.00);
+		font-size:250px;
+		z-index:1;
+		font-style: Bold;
+		font-weight: bolder;
+		position: absolute;
+		left:130px;
+		top:23px
+	}
+	
+	
+	h2{
+       color:hsla(251,100%,97%,1.00);
+		font-size:120px;
+		z-index:1;
+		font-style: normal;
+		font-weight: 100;
+		position: absolute;
+		left:960px;
+		top:220px;
+	}
+	
+	h3{
+		color:hsla(251,100%,97%,1.00);
+		font-size:120px;
+		z-index:1;
+		font-style:normal;
+		font-weight: 100;
+		position: absolute;
+		left:130px;
+		top:3px;
+	}
+	
+	h3:hover{
+			color: hsla(358,78%,51%,1.00);
+		}	
+	
+	h4{
+		color:hsla(251,100%,97%,1.00);
+		font-size:15px;
+		z-index:1;
+		font-style: thin;
+		font-weight: 90;
+		position: absolute;
+		top:130px;
+		left:1195px;
+		white-space: nowrap;
+	}
+	
+	
+	h6{
+		color:hsla(251,100%,97%,1.00);
+		font-size:35px;
+		z-index: 1;
+		position: absolute;
+		left:764px;
+		top:365px;
+		font-style: "thin";
+		font-weight: 100;
+		white-space: nowrap;
+	}
+	
+	h6:hover{
+			color: hsla(358,78%,51%,1.00); 
+		}	
+	
+	h7{
+		color:hsla(251,100%,97%,1.00);
+		font-size:25px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:710px;
+		left:130px;
+		width:1180px;
+		display:block; 
+		
+	}
+	
+	h5{
+		width: 0px;
+		height:0px;
+		position: absolute;
+		top:0px;
+		color:hsla(252,57%,25%,1.00);
+		font-size: 0px;
+	}
+	
+	h8{
+		color:hsla(251,100%,97%,1.00);
+		font-size:25px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:1100px;
+		left:130px;
+		width:1070px;
+		display:block; 
+	}
+	
+	h9{
+		color:hsla(251,100%,97%,1.00);
+		font-size:25px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:1490px;
+		left:130px;
+		width:830px;
+		display:block; 
+	}
+	
+	h10{
+		color:hsla(251,100%,97%,1.00);
+		font-size:80px;
+		z-index: 1;
+		position: absolute;
+		left:125px;
+		top:2350px;
+	}
+	
+	h17{
+		color:hsla(251,100%,97%,1.00);
+		font-size:20px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:2450px;
+		left:130px;
+		width:300px;
+		display:block; 
+	}
+	
+	.Kayak{
+		background: url("Graphics/SVG/kayak.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		width:190px;
+		height:150px;
+		left:130px;
+		top:2200px;
+		z-index: 1;
+	}
+	
+	h11{
+		color:hsla(251,100%,97%,1.00);
+		font-size:80px;
+		z-index: 1;
+		position: absolute;
+		left:520px;
+		top:2900px;
+	}
+	
+	h18{
+		color:hsla(251,100%,97%,1.00);
+		font-size:20px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:3000px;
+		left:525px;
+		width:300px;
+		display:block; 
+	}
+	
+	.Bike{
+		position: absolute;
+		width:190px;
+		height:150px;
+		left:525px;
+		top:2750px;
+		z-index: 1;
+       background:url("Graphics/SVG/bike.svg");
+		background-repeat: no-repeat;
+	}
+	
+	h12{
+		color:hsla(251,100%,97%,1.00);
+		font-size:80px;
+		z-index: 1;
+		position: absolute;
+		left:915px;
+		top:2900px;
+	}
+	
+	h20{
+		color:hsla(251,100%,97%,1.00);
+		font-size:20px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:3000px;
+		left:915px;
+		width:300px;
+		display:block;
+	}
+	
+	.Hike{
+		background:url("Graphics/SVG/hike.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		width:190px;
+		height:150px;
+		left:915px;
+		top:2750px;
+		z-index: 1;
+	}
+	
+	h13{
+		color:hsla(251,100%,97%,1.00);
+		font-size:80px;
+		z-index: 1;
+		position: absolute;
+		left:520px;
+		top:2350px;
+	}
+	
+	h19{
+		color:hsla(251,100%,97%,1.00);
+		font-size:20px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:2450px;
+		left:525px;
+		width:300px;
+		display:block;
+	}
+	
+	.Camp{
+		background:url("Graphics/SVG/camp.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		width:190px;
+		height:150px;
+		left:525px;
+		top:2200px;
+		z-index: 1;
+	}
+	
+	h14{
+		color:hsla(251,100%,97%,1.00);
+		font-size:80px;
+		z-index: 1;
+		position: absolute;
+		left:125px;
+		top:2900px;
+	}
+	
+	h21{
+        color:hsla(251,100%,97%,1.00);
+		font-size:20px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:3000px;
+		left:130px;
+		width:300px;
+		display:block;
+	}
+	
+	.Fish{
+		background:url("Graphics/SVG/fish.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		width:190px;
+		height:150px;
+		left:125px;
+		top:2750px;
+		z-index: 1;
+	}
+	
+	h15{
+        color:hsla(251,100%,97%,1.00);
+		font-size: 120px;
+		z-index:1;
+		font-style: normal;
+		font-weight:200;
+		position: absolute;
+		left:130px;
+		top:3600px;
+		white-space: nowrap;
+	}
+	
+	h16{
+		 color:hsla(251,100%,97%,1.00);
+		font-size: 100px;
+		z-index:1;
+		font-style: normal;
+		font-weight:200;
+		position: absolute;
+		left:130px;
+		top:4000px;
+		white-space: nowrap;
+	}
+	
+	
+	
+	
+	@media only screen and (max-width:790px){
+		
+		body{
+		background-color:hsla(268,56%,18%,1.00);
+		margin:0px;
+		padding:0px;
+		font-family: "Helvetica Neue LT Std 95 Black", "Helvetica Neue Medium", "Helvetica Neue LT Std 45 Light", "Helvetica Neue LT Std 35 Thin";
+	
+	}
+		
+		.heart{
+			position: absolute;
+			background-image: url("stranger-vio-2.svg") ;
+		    left:185px;
+		    top:0px;
+		    height: 1290px;
+		    width:790px;
+		    background-repeat: no-repeat;
+		    top:0px;
+			left:0px;
+		z-index:-1;
+	}	
+		
+	h1{
+		color:hsla(251,100%,97%,1.00);
+		font-size:100px;
+		z-index:1;
+		font-style: Bold;
+		font-weight: bolder;
+		position: absolute;
+		left:80px;
+		top:20px
+	}
+		
+	h2{
+       color:hsla(251,100%,97%,1.00);
+		font-size:40px;
+		z-index:1;
+		font-style: normal;
+		font-weight: 100;
+		position: absolute;
+		left:412px;
+		top:115px;
+	}	
+	
+	h3{
+		color:hsla(251,100%,97%,1.00);
+		font-size:40px;
+		z-index:1;
+		font-style: normal;
+		font-weight: 100;
+		position: absolute;
+		left:80px;
+		top:15px;
+		}	
+	
+		h3:hover{
+			color: hsla(358,78%,51%,1.00);
+		}	
+		
+	h4{
+		color:hsla(251,100%,97%,1.00);
+		font-size:10px;
+		z-index:1;
+		font-style: thin;
+		font-weight: 90;
+		position: absolute;
+		top:50px;
+		left:646px;
+		white-space: nowrap;
+	}
+		
+	h5{
+		color:hsla(251,100%,97%,1.00);
+		font-size: 40px;
+		z-index:1;
+		font-style: normal;
+		font-weight:200;
+		position: absolute;
+		left:80px;
+		top:1050px;
+		white-space: nowrap;
+	}	
+		
+	h6{
+		color:hsla(251,100%,97%,1.00);
+		font-size:15px;
+		z-index: 1;
+		position: absolute;
+		left:295px;
+		top:160px;
+		font-style: "thin";
+		font-weight: 100;
+		white-space: nowrap;
+		width:300px;
+	}	
+		
+		h6:hover{
+			color: hsla(358,78%,51%,1.00); 
+		}	
+		
+	h7{
+		color:hsla(251,100%,97%,1.00);
+		font-size:13px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:300px;
+		left:80px;
+		width:450px;
+		display:block; 
+	}	
+		
+	h8{
+		color:hsla(251,100%,97%,1.00);
+		font-size:13px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:530px;
+		left:80px;
+		width:350px;
+		display:block; 
+	}	
+		
+	h9{
+		color:hsla(251,100%,97%,1.00);
+		font-size:13px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:760px;
+		left:80px;
+		width:350px;
+		display:block; 
+	}	
+		
+	.soul{
+		position: absolute;
+		background-color:rgba(43,28,102,1.00);
+		left:0px;
+		top:1210px;
+		height:300px;
+		width:790px;
+		z-index: -1;
+	}
+		
+	.body{
+		position: absolute;
+		background-color:hsla(257,46%,32%,1.00);
+		left:0px;
+		top:1550px;
+		height:300px;
+		width:790px;
+		z-index: -1;
+	}	
+		
+	.box1{
+		position: absolute;
+		background-color:hsla(267,50%,35%,1.00);
+		left:0px;
+		top:1890px;
+		height:300px;
+		width:790px;
+		z-index: -1;
+	}	
+		
+	.box2{
+		position: absolute;
+		background-color:hsla(271,50%,38%,1.00);
+		left:0px;
+		top:2230px;
+		height:300px;
+		width:790px;
+		z-index: -1;
+	}	
+		
+	.box3{
+		position: absolute;
+		background-color:hsla(264,41%,42%,1.00);
+		left:0px;
+		top:2570px;
+		height:300px;
+		width:790px;
+		z-index: -1;
+	}	
+		
+	h10{
+		color:hsla(251,100%,97%,1.00);
+		font-size:40px;
+		z-index: 1;
+		position: absolute;
+		left:80px;
+		top:1220px;
+	}
+		
+	h11{
+		color:hsla(251,100%,97%,1.00);
+		font-size:40px;
+		z-index: 1;
+		position: absolute;
+		left:80px;
+		top:1560px;
+	}
+	
+	h12{
+		color:hsla(251,100%,97%,1.00);
+		font-size:40px;
+		z-index: 1;
+		position: absolute;
+		left:80px;
+		top:1900px;
+	}
+	
+	h13{
+		color:hsla(251,100%,97%,1.00);
+		font-size:40px;
+		z-index: 1;
+		position: absolute;
+		left:80px;
+		top:2240px;
+	}
+	
+	h14{
+		color:hsla(251,100%,97%,1.00);
+		font-size:40px;
+		z-index: 1;
+		position: absolute;
+		left:80px;
+		top:2590px;
+	}	
+		
+	.other{
+		position: absolute;
+		background-color:hsla(245,47%,24%,1.00);
+		left:0px;
+		top:3040px;
+		height:700px;
+		width:790px;
+		z-index: -1;
+	}	
+		
+	h15{
+        color:hsla(251,100%,97%,1.00);
+		font-size: 40px;
+		z-index:1;
+		font-style: normal;
+		font-weight:200;
+		position: absolute;
+		left:80px;
+		top:2940px;
+		white-space: nowrap;
+	}	
+		
+	h16{
+		 color:hsla(251,100%,97%,1.00);
+		font-size: 40px;
+		z-index:1;
+		font-style: normal;
+		font-weight:200;
+		position: absolute;
+		left:80px;
+		top:3060px;
+		white-space: nowrap;
+	}	
+	
+	h17{
+		color:hsla(251,100%,97%,1.00);
+		font-size:15px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:1270px;
+		left:195px;
+		width:500px;
+		display:block; 
+	}
+		
+		h18{
+		color:hsla(251,100%,97%,1.00);
+		font-size:15px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:1610px;
+		left:195px;
+		width:500px;
+		display:block; 
+		}	
+		
+		h19{
+		color:hsla(251,100%,97%,1.00);
+		font-size:15px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:2290px;
+		left:195px;
+		width:500px;
+		display:block; 	
+		}
+		
+		h20{
+		color:hsla(251,100%,97%,1.00);
+		font-size:15px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:1950px;
+		left:195px;
+		width:500px;
+		display:block;
+		}
+		
+		h21{
+		color:hsla(251,100%,97%,1.00);
+		font-size:15px;
+		z-index: 1;
+		position: absolute;
+		font-style: normal;
+		font-weight: 100;
+		top:2630px;
+		left:195px;
+		width:500px;
+		display:block;
+		}
+		
+		.stone{
+			background-color:hsla(249,88%,97%,1.00);
+			z-index:2;
+			position: absolute;
+			width: 500px;
+			height: 5px;
+			left:195px;
+			top:2620px;
+		}
+		
+		.free{
+			background-color:hsla(249,88%,97%,1.00);
+			z-index:2;
+			position: absolute;
+			width: 500px;
+			height: 5px;
+			left:195px;
+			top:1940px;
+		}
+		
+		.ocean{
+			background-color:hsla(249,88%,97%,1.00);
+			z-index:2;
+			position: absolute;
+			width: 500px;
+			height: 5px;
+			left:195px;
+			top:2280px;
+		}
+		
+		.jo{
+			background-color:hsla(249,88%,97%,1.00);
+			z-index:2;
+			position: absolute;
+			width: 500px;
+			height: 5px;
+			left:195px;
+			top:1600px;
+		}
+		
+		.line{
+			background-color:hsla(249,88%,97%,1.00);
+			z-index:2;
+			position: absolute;
+			width: 500px;
+			height: 5px;
+			left:195px;
+			top:1260px;
+		}
+		
+		img{
+			width:0px;
+			height:0px;
+		}
+		
+		.Fish{
+			width:0px;
+			height:0px;
+		}
+		
+		.Camp{
+			width:0px;
+			height:0px;
+		}
+		
+		.Bike{
+			width:0px;
+			height:0px;
+		}
+		
+		.Hike{
+			width:0px;
+			height:0px;
+		}
+		
+		.Kayak{
+			width:0px;
+			height:0px;
+		}
+	}
+	
+	</style>	
+	
+</head>
+
+<body>
+
+<img src="PurpleH.svg" alt="stranger-vio-2.svg">
+	
+	
+<!--image-->	
+<div class="mind">	
+<!--image-->		
+	
+<!--Back-->		
+<div class="heart"></div>
+<div class="soul"></div>
+<div class="body"></div>	
+<div class="box1"></div>	
+<div class="box2"></div>	
+<div class="box3"></div>	
+<div class="other"></div>		
+<!--Back-->	
+	
+<!--blocks-->	
+<div class="stone"></div>
+<div class="free"></div>
+<div class="ocean"></div>
+<div class="jo"></div>
+<div class="line"></div>	
+	
+<!--blocks-->	
+	
+<!--images!-->		
+<!--images!-->	
+	
+<!--Bigwords-->	
+	<h1>Acadia</h1>
+	
+	<h2>Maine</h2>
+	
+	<a href="https://www.nps.gov/acad/index.htm">
+	<h3>Visit</h3>
+	</a>
+	
+	<h4>est. 1/19/1929</h4>
+	
+	<h5>Come and Enjoy:</h5>
+	
+	<a href="https://www.nps.gov/acad/planyourvisit/maps.htm">
+	<h6>LAT 44.338974 LONG -68.273430</h6>
+	</a>
+	
+	<h10>Kayak</h10>
+	
+	<h11>Bike</h11>
+	
+	<h12>Hike</h12>
+	
+	<h13>Camp</h13>
+	
+	<h14>Fish</h14>
+	
+	<h15>Plan a Trip Today:</h15>
+	
+	<h16>Plan Other Trips</h16>
+	
+	
+<!--Bigwords-->	
+	
+<!--text-->	
+	<h7>Acadia is nation park located on the Mount Desert Island in Maine. This national park has been beloved
+by all for its wonderful lush green forests, great ponds and rivers, beautiful pinetree covered mountains, and two 
+very popular beaches. There’s tons to explore and do here and since the park is opened 24 hours 7 days a 
+week you’ll have all the time in the world.</h7>
+	
+	<h8>You can find over 400 different types of wildlife all over the park grounds like red foxes, white-tailed 
+deer, and the adorable puffins. Come each season and see what newbeautiful creature is roaming the 
+park. For those not interested in animals come and see the over 1000 wonderful plant life 
+scattered all around park. You’ll love seeing the cool blue Wild Blue Iris, the wild Lily-of-The-Valley, the 
+calming Starflower, and from August to September see the Goldenrods in full bloom. </h8>
+	
+<h9>Adventure through the park and see the many historical landmarks 
+Acadia has to offer. Find memorials like the John D. Rockefeller Memorial 
+and the Robert Abbe memorial. Walk under the historical cobblestone 
+bridges. Witness the eye catching lighthouses and even see them 
+light up red during the night. </h9>	
+
+<h17>Kayaking is a fun relaxing time on the water and is super easy 
+for beginners to do. With several kayak rentals all over and to choose from you can basically kayak anywhere in or around the park. Also, Acadia offersseveral coastal tours for those who don’t really 
+know where they want to go. </h17>	
+	
+<h18>With over 40 miles of carriage roads, you’ll be biking for hours around the park. If you get bored of that you can get on actual bike paths and even other roads like gravel roads and paved roads.</h18>	
+	
+<h19>Need a break from life and other troubles well why not camp out. Acadia does not allow “out-of-bounds” camping or camping out in cars, but they have four wonderful campgrounds to 
+choose from.  </h19>	
+	
+<h20>For all you hike lovers you’ll get you’re kicks here. There is over 150 miles of endless trails to experience. Explore the mountain 
+tops, have an adventure in the forest, and look upon the sights along the rocky coastlines. </h20>	
+	
+<h21>Looking for a nice relaxing fishing trip well Acadia has you 
+covered. Acadia is the home to 29 different species of freshwater fish among the many bodies of water. There’s a numerous number 
+of lakes, ponds, and streams, but if that’s not your thing you can 
+just fish in the ocean the park is on an island after all. </h21>	
+	
+<!--text-->	
+
+<!--graphic-->	
+<div class="Kayak"></div>
+<div class="Camp"></div>	
+<div class="Fish"></div>
+<div class="Bike"></div>
+<div class="Hike"></div>	
+<!--graphic-->		
+	
+	
+	</div>	
+	
+</body>
+</html>
